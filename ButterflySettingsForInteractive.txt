@@ -1,0 +1,25 @@
+Nexus 5X - The "Easy Way" Setup - For ElementalX Kernel
+
+CPU #1 (aka "little", aka "has 4 cores", aka "maxes out at 1440Mhz")
+
+target_loads - 75 460000:69 600000:80 672000:76 787000:81 864000:81 960000:69 1248000:78
+timer_slack - -1
+hispeed_freq - 460Mhz
+timer_rate - 20000
+above_hispeed_delay - 30000 600000:20000 672000:10000
+go_hispeed_load - 75
+min_sample_time - 60000
+
+CPU #2 (aka "big", aka "has 2 cores", aka "maxes out at 1824Mhz")
+
+target_loads - 72 480000:68 633000:74 768000:80 864000:81 960000:69 1248000:83 1344000:84 1440000:84 1536000:84 1632000:86 1689000:83
+timer_slack - 80000
+hispeed_freq - 633Mhz
+timer_rate - 10000
+above_hispeed_delay - 10000
+go_hispeed_load - 72
+min_sample_time - 100000
+
+Under "CPU Boost", set "input boost milliseconds" to "0". 
+
+Source : http://forum.xda-developers.com/nexus-5x/general/guide-advanced-interactive-governor-t3269557
